@@ -1,0 +1,82 @@
+@import "../AddOns/functions", "../AddOns/mixins", "../AddOns/variables", "../SCSS/blocks/myAnimations";
+// Slider 
+@import "../SCSS/blocks/header-slider";
+// Header sidebar
+@import "../SCSS/blocks/header-sidebar";
+// Header map
+@import "../SCSS/blocks/header-map";
+// Title | Subtitle
+@import "../SCSS/blocks/title";
+// Cards
+@import "../SCSS/blocks/cards";
+
+
+html {
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+
+
+body {
+   font-family: 'Fira Sans', sans-serif;
+   font-weight: 400;
+   color: $primary-color;
+   background-color: #171919;
+   text-transform: uppercase;
+}
+
+.container {
+   max-width: 1920px;
+   margin: 0 auto;
+}
+
+.primary-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 800;
+   font-size: 2.5rem;
+   height: 80px;
+
+   &-link {
+      color: inherit;
+      pointer-events: initial;
+
+      span {
+         position: relative;
+         padding-left: 27px;
+         padding: 16px 57px 16px 16px;
+         background-color: $accent-color;
+
+         &::before {
+            content: "";
+            position: absolute;
+            width: 24px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-right: 1.2531rem;
+            height: 20px;
+            background-image: url("/Images/ArrowRightBtn.png");
+            background-position: center;
+            background-repeat: no-repeat;
+         }
+      }
+   }
+}
+
+// Section Margin
+.surf {
+   margin-top: 160px;
+   margin-bottom: 210px;
+}
+
+
+

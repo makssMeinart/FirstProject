@@ -1,0 +1,114 @@
+.header__watermark {
+   font-weight: 800;
+   max-width: 467px;
+   font-size: 12.5rem;
+   line-height: 156px;
+   color: $primary-color;
+   opacity: 0.07;
+   z-index: 4;
+   position: absolute;
+   left: 0;
+   top: 0;
+   text-transform: uppercase;
+}
+
+// Start of the sidebar
+
+.header-sidebar {
+   position: absolute;
+   text-align: center;
+   top: 0;
+   left: 0;
+   max-width: 168px;
+   height: 100vh;
+   z-index: 5;
+   border-right: 1px solid rgba($primary-color, $alpha: .25);
+
+   .logo img {
+      width: 8rem;
+   }
+
+}
+
+.menu {
+   margin-top: 3rem;
+
+   &__list {
+      li {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         color: $primary-color;
+         cursor: pointer;
+
+         img {
+            height: 2.8125rem;
+            width: 3.125rem;
+         }
+
+         span {
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 14px;
+            text-align: center;
+            letter-spacing: 3px;
+            padding-top: 0.325rem;
+         }
+
+         &:not(:first-child) {
+            margin-top: 1rem;
+         }
+         
+      }
+   }
+}
+
+// Header Search 
+.header__search {
+   margin-top: 1.5rem;
+   cursor: pointer;
+}
+
+.header__search, .header__search img {
+   height: 1.2rem;
+}
+
+// Header date
+.header__date {
+   margin-top: .7rem;
+   color: $primary-color;
+   font-weight: 800;
+   font-size: 4rem;
+   line-height: 4rem;
+   text-transform: uppercase;
+
+   span {
+      display: block;
+      font-weight: 300;
+      font-size: .9rem;
+      line-height: 1.1875rem;
+      letter-spacing: 1.4px;
+   }
+}
+
+// Header Location 
+.header__location {
+   margin-top: 1.3rem;
+   display: inline-block;
+   position: relative;
+   padding-left: 20px;
+   font-weight: 300;
+   font-size: 0.75rem;
+   line-height: 0.875rem;
+   letter-spacing: 0.0656rem;
+   color: $primary-color;
+
+   &::before {
+      content: url("/Images/POI.svg");
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+

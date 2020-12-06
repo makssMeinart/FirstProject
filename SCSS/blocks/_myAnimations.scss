@@ -1,0 +1,12 @@
+// Header Animations
+.animation__location-map {
+   stroke-dasharray: 550;
+   stroke-dashoffset: 550;
+   animation: dashMap 5s linear infinite 6s;
+}
+
+@keyframes dashMap {
+   to {
+      stroke-dashoffset: 0;
+   }
+}

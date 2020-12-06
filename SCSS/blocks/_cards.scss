@@ -1,0 +1,79 @@
+.cards {
+
+}
+
+.card-box {
+   max-width: 400px;
+   height: 600px;
+   background-size: cover;
+   background-position: center;
+
+   &__inner {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 4.5rem 2.375rem 0 2.375rem;
+      background-color: rgba(#1C2121, $alpha: .85);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      pointer-events: none;
+   }
+
+   &__title {
+      font-weight: 800;
+      font-size: 2.5rem;
+
+      h4 {
+         margin: 0;
+      }
+   }
+
+   &__body {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+      writing-mode: vertical-rl;
+
+      &-location {
+         margin: 0;
+         font-size: 1.125rem;
+         letter-spacing: 8px;
+         transform: rotate(180deg);
+      }
+   }
+
+   &:hover {
+      .card-box__inner {
+         background-color: rgba(#1C2121, $alpha: .35);
+      }
+      .primary-btn-link {
+         display: block;
+      }
+      
+   }
+
+}
+
+// Enable and disable btn 
+.card-box .primary-btn {
+   &-link {
+      display: none;
+   }
+}
+
+// Cards Slider 
+.card__slider-arrow {
+   position: absolute;
+   cursor: pointer;
+   top: -42px;
+}
+
+.card__slider-arrow.right {
+   right: 5.0225rem;
+}
+
+.card__slider-arrow.left {
+   right: 7.8031rem;
+}

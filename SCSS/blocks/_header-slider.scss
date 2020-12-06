@@ -1,0 +1,167 @@
+.header {
+   position: relative;
+   height: 100vh;
+   z-index: 100;
+   user-select: none;
+}
+
+.header__slider {
+
+   &-item {
+      height: 100vh !important;
+      background-image: url("/Images/header-slide-1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+   }
+
+}
+
+// Header Scroll
+.header__scroll {
+   position: absolute;
+   bottom: 35px;
+   left: 170px;
+   z-index: 5;
+   cursor: pointer;
+}
+
+
+.slider-item__info {
+   position: absolute;
+   right: 5rem;
+   bottom: 7.25rem;
+}
+
+// Slider Info 
+.slider-item__info {
+   text-align: right;
+   text-transform: uppercase;
+
+   .body-left {
+      font-size: 1.375rem;
+      line-height: 2rem;
+      letter-spacing: 0.4583rem;
+      color: $primary-color;
+      opacity: 0.5;
+      padding-left: 6.4375rem;
+      position: relative;
+      display: inline-block;
+
+      &::before {
+         content: "";
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         height: 1px;
+         width: 5rem;
+         background-color: $primary-color;
+      }
+
+   }
+
+   &-title {
+      font-weight: 800;
+      font-size: 5rem;
+      line-height: 5.375rem;
+      color: $primary-color;
+      margin: 0 0 3rem 0;
+   }
+
+   &-text {
+      font-weight: 800;
+      font-size: 2.5rem;
+      line-height: 2.8125rem;
+      color: $primary-color;
+      margin-bottom: 1.25rem;
+   }
+
+   &-subtitle {
+      margin-bottom: 0.3125rem;
+   }
+
+   &-subtext {
+      margin-bottom: 0.4375rem;
+   }
+
+   .slider-item__info-link {
+      outline: none;
+   }
+
+}
+
+// Slider Arrows 
+
+.slider-arrows {
+   width: 24px;
+   height: 20px;
+   top: 40px;
+   position: absolute;
+   z-index: 10;
+   cursor: pointer;
+
+
+   &__right {
+      right: 80px;
+   }
+
+   &__left {
+      right: 125px;
+   }
+}
+
+// Slider Dots ( Extra slider )
+.slider-dots {
+   position: absolute ;
+   max-width: 57.5rem;
+   right: 67px;
+   bottom: 40px;
+   color: $primary-color;
+
+   &__item.slick-current {
+      .dots-box {
+         border-color: $accent-color;
+      }
+   }
+
+   &__item {
+      margin: 0 15px;
+      outline: none;
+   }
+
+   // Remove Secondary Slider Scroll Animation
+
+   & .slick-track {
+      transform: none !important;
+   }
+
+}
+
+// Slider Dots Items
+
+.dots-box {
+   width: 12.5rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 0.25rem;
+   border-top: 4px solid $primary-color;
+
+   &__number {
+      font-weight: 800;
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+      color: $primary-color;
+   }
+
+   &__name {
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.1875rem;
+      color: $primary-color;
+   }
+}
+
+
