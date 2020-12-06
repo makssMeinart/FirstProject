@@ -13,7 +13,7 @@ $(function () {
       focusOnSelect: false,
    });
 
-   $(".cards").slick({
+   $('.cards').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       prevArrow: `<img class="card__slider-arrow left" src="../Images/cardSlideArrowLeft.png"></img>`,

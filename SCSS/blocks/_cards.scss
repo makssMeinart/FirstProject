@@ -1,22 +1,34 @@
-.cards {
+.cards {}
+
+// Positioning 
+.slick-track {
+
+   .card-box:nth-child(4n + 1) {
+      margin-top: 32px;
+   }
+
+   .card-box:nth-child(4n + 3) {
+      margin-top: 89px;
+   }
+
 
 }
 
 .card-box {
-   max-width: 400px;
-   height: 600px;
+   position: relative;
    background-size: cover;
    background-position: center;
 
+
    &__inner {
-      height: 100%;
-      width: 100%;
+      height: 750px;
+      padding: 4.5rem 2.375rem 0 2.375rem;
       display: flex;
       flex-direction: column;
-      padding: 4.5rem 2.375rem 0 2.375rem;
-      background-color: rgba(#1C2121, $alpha: .85);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       pointer-events: none;
+      background-color: rgba(#1C2121, $alpha: .85);
+      transition: .2s background-color linear;
+
    }
 
    &__title {
@@ -42,16 +54,6 @@
          letter-spacing: 8px;
          transform: rotate(180deg);
       }
-   }
-
-   &:hover {
-      .card-box__inner {
-         background-color: rgba(#1C2121, $alpha: .35);
-      }
-      .primary-btn-link {
-         display: block;
-      }
-      
    }
 
 }

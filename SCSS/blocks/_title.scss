@@ -37,6 +37,14 @@
 
 .subtitle {
 
+   .floating__img {
+      max-width: 294px;
+      max-height: 350px;
+      position: absolute;
+      right: -230px;
+      top: -100%;
+   }
+
    .subtitle-strapline {
       position: relative;
       color: rgba($color: white, $alpha: .5);
