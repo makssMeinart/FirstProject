@@ -1,0 +1,200 @@
+.slider-map {
+    max-width: 1300px;
+    min-height: 700px;
+    margin: 0 auto;
+    background-image: url("/Images/WorldMapDots.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &::after {
+        @extend .v-text;
+        content: "34.0501 N -118.2446 W";
+        position: absolute;
+        height: auto;
+        right: -16%;
+        top: 30%;
+        width: fit-content;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+}
+
+.slider-map .slick-list {
+    overflow: visible;
+}
+
+// Disable Horisontal Scroll In Slider spots
+.slider-map .slick-track {
+    transform: none !important;
+}
+
+.slider-spots {
+    padding: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    outline: none;
+    justify-content: center;
+    position: relative;
+    width: fit-content !important;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background-color: $accent-color;
+        box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
+        position: relative;
+        cursor: pointer;
+
+    }
+}
+
+// Slider Spots Location
+.slider-spots-1 {
+    top: 335px;
+    left: -50px;
+}
+
+.slider-spots-2 {
+    top: 290px;
+    left: 0;
+
+    .slider-spots__icon {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 16px;
+            width: 13px;
+            background-image: url("/Images/location-pio-small.png");
+            right: -30px;
+            top: -25px;
+            z-index: 100;
+            opacity: .25;
+        }
+    }
+
+}
+
+.slider-spots-3 {
+    top: 315px;
+    left: 120px;
+}
+
+.slider-spots-4 {
+    top: 510px;
+    left: 90px;
+}
+
+.slider-spots-5 {
+    top: 200px;
+    left: 120px;
+}
+
+.slider-spots-6 {
+    top: 570px;
+    left: 130px;
+}
+
+.slider-spots-7 {
+    top: 390px;
+    left: 200px;
+}
+
+.slider-spots-8 {
+    top: 500px;
+    right: -420px;
+
+}
+
+// Show Spots Content on Current Slide
+.slider-spots.slick-current {
+    .slider-spots__content {
+        display: block;
+    }
+
+    .slider-spots__icon {
+        &::before {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 16px solid $accent-color;
+            border-radius: 8px;
+            top: -8px;
+        }
+    }
+}
+
+
+.slider-spots__content {
+    padding: 28px 40px;
+    background-color: rgba(#0F1010, .70);
+    border-radius: 5px;
+    width: 285px;
+    position: absolute;
+    top: -185px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 100;
+    display: none;
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-title {
+        font-weight: 800;
+        font-size: 1.125rem;
+        padding-bottom: 12px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 1px;
+            background-color: $accent-color;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &-subtitle {
+        text-transform: capitalize;
+        padding-top: 8px;
+    }
+
+    &-col {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+
+        &-item {
+
+            img {
+                display: inline-block;
+            }
+
+            text-align: center;
+            width: 25%;
+
+            div {
+                font-weight: 800;
+                font-size: 1rem;
+            }
+
+            span {
+                font-weight: 300;
+                font-size: 0.625rem;
+                line-height: 12px;
+            }
+        }
+    }
+}

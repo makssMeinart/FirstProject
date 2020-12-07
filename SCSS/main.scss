@@ -35,15 +35,20 @@ body {
 
 .container {
    max-width: 1920px;
+   height: fit-content;
    margin: 0 auto;
 }
 
+.hidden {
+   display: none;
+}
+
 .primary-btn {
+   @extend .b-text;
+
    display: flex;
    align-items: center;
    justify-content: center;
-   font-weight: 800;
-   font-size: 2.5rem;
    height: 80px;
 
    &-link {

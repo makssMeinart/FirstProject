@@ -37,14 +37,6 @@
 
 .subtitle {
 
-   .floating__img {
-      max-width: 294px;
-      max-height: 350px;
-      position: absolute;
-      right: -230px;
-      top: -100%;
-   }
-
    .subtitle-strapline {
       position: relative;
       color: rgba($color: white, $alpha: .5);
@@ -55,7 +47,7 @@
    }
 
    .subtitle-title {
-      font-size: 2.5rem;
+      @extend .b-text;
       margin: 0;
 
       span {

@@ -18,6 +18,20 @@ $(function () {
       slidesToScroll: 1,
       prevArrow: `<img class="card__slider-arrow left" src="../Images/cardSlideArrowLeft.png"></img>`,
       nextArrow: `<img class="card__slider-arrow right" src="../Images/cardSlideArrowRight.png"></img>`,
+      asNavFor: '.slider-map'
    });
 
+   $('.slider-map').slick({
+      slidesToShow: 8,
+      slidesToScroll: 1,
+      arrows: false,
+      focusOnSelect: true,
+      asNavFor: '.cards'
+   })
+
 })
+
+
+
+
+
