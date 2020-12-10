@@ -36,6 +36,7 @@
 }
 
 .subtitle {
+   display: block;
 
    .subtitle-strapline {
       position: relative;
@@ -69,6 +70,28 @@
          position: absolute;
          top: 50%;
          left: 0;
+         width: 5rem;
+         height: 1px;
+         background-color: white;
+         transform: translateY(-50%);
+      }
+   }
+
+}
+
+.subtitle.subtitle-left {
+   text-align: left;
+   margin-left: 8.4375rem;
+
+   .subtitle-strapline {
+      display: inline-block;
+      padding-right: 105px;
+
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: 0;
          width: 5rem;
          height: 1px;
          background-color: white;

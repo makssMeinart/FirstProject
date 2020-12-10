@@ -11,6 +11,16 @@
 @import "../SCSS/blocks/cards";
 // Map 
 @import "../SCSS/blocks/map";
+// Slider travel
+@import "../SCSS/blocks/slider-travel";
+// Slider Content Box
+@import "../SCSS/blocks/slide__content-box";
+// Sleep Slider
+@import "../SCSS/blocks/sleep-slide";
+// Calculators Btns
+@import "../SCSS/blocks/calculator__btns";
+
+
 
 html {
    font-size: 16px;
@@ -20,7 +30,7 @@ html {
 *,
 *::before,
 *::after {
-   box-sizing: inherit;
+   box-sizing: inherit; 
 }
 
 
@@ -31,30 +41,34 @@ body {
    color: $primary-color;
    background-color: #171919;
    text-transform: uppercase;
+   overflow-x:hidden;
 }
 
 .container {
    max-width: 1920px;
-   height: fit-content;
-   margin: 0 auto;
+   margin: 0 8.4375rem;
 }
 
 .hidden {
    display: none;
 }
 
+.slider-arrows {
+   opacity: .4;
+}
+
 .primary-btn {
    @extend .b-text;
-
    display: flex;
    align-items: center;
    justify-content: center;
-   height: 80px;
+   height: 80px; 
 
    &-link {
       color: inherit;
       pointer-events: initial;
       outline: none;
+      display: inline-block;
 
       span {
          position: relative;

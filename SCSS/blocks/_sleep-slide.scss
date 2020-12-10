@@ -1,0 +1,118 @@
+.sleep-slider {
+    .slider-arrows {
+        height: 300px;
+    }
+}
+
+.slider__item {
+    outline: none;
+    overflow-x: hidden;
+
+    &-head {
+
+        display: flex;
+        position: relative;
+        margin-bottom: 7.5rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 385px;
+            width: 565px;
+            background-image: url("/Images/hamack.png");
+            transform: translateY(50px);
+            transform: translateX(70px);
+        }
+    }
+
+    &-header-img {
+        display: block;
+        min-height: 780px;
+        max-width: 1200px;
+        width: 100%;
+        background-image: url("/Images/sleep-image.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &__inner {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .subtitle-right {
+        right: 0;
+        margin-top: 70px;
+        position: absolute;
+    }
+
+    .subtitle-left {
+        bottom: 0;
+        position: absolute;
+
+        h3 {
+            padding-right: 179px;
+
+            &::before {
+                content: "";
+                width: 154px;
+                height: 22px;
+                position: absolute;
+                background-image: url("/Images/stars-icon.png");
+                background-size: cover;
+                background-position: center;
+                right: 0;
+                top: 50%;
+                transform: translateY(50%);
+            }
+        }
+
+    }
+
+}
+
+// Adding Btns to slide_content
+
+.slider__item {
+
+    .slide__content-box-ammount-btn {
+        text-align: right;
+
+        button {
+
+            background: none;
+            outline: none;
+            border: none;
+            color: $accent-color;
+            cursor: pointer;
+            margin-left: auto;
+        }
+    }
+}
+
+
+.sleep {
+
+    .primary-btn {
+        margin-bottom: 290px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            width: 345px;
+            height: 265px;
+            background-image: url("/Images/frangipani.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            transform: translateX(155px);
+        }
+        
+
+    }
+}

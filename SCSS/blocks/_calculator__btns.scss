@@ -1,0 +1,76 @@
+.quantity {
+  display: grid;
+  grid-template-areas:
+    "ammount title"
+    ". buttons"
+  ;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr;
+  grid-column-gap: 10px;
+  grid-area: title;
+  justify-items: end;
+
+  input {
+    grid-area: ammount;
+  }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  @extend .b-text;
+
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  background: none;
+  border: none;
+  color: $primary-color;
+  pointer-events: none;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 39px;
+  width: 44px;
+  grid-area: buttons;
+}
+
+.quantity-button {
+  position: absolute;
+  background: none;
+  cursor: pointer;
+  font-weight: 800;
+  color: $accent-color;
+  font-family: inherit;
+  font-size: 35px;
+  user-select: none;
+  height: 100%;
+}
+
+.quantity-button.quantity-up {
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  left: 0;
+}

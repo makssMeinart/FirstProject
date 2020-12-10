@@ -90,16 +90,19 @@
 
 
 // Cards Slider 
-.card__slider-arrow {
-   position: absolute;
-   cursor: pointer;
-   top: -42px;
-}
+.cards {
 
-.card__slider-arrow.right {
-   right: 5.0225rem;
-}
+   .slider-arrows {
+      position: absolute;
+      cursor: pointer;
+      top: -42px;
+   }
 
-.card__slider-arrow.left {
-   right: 7.8031rem;
+   .slider-arrows__right {
+      right: 5.0225rem;
+   }
+
+   .slider-arrows__left {
+      right: 7.8031rem;
+   }
 }

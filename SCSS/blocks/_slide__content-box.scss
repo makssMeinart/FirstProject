@@ -1,0 +1,45 @@
+.slide__content-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4.375rem;
+
+    &__item {
+        display: flex;
+    }
+
+    &-info {
+        @extend .v-text;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        text-align: right;
+        padding-left: 17px;
+        opacity: .5;
+    }
+
+    &-ammount {
+        @extend .b-text;
+
+        span {
+            font-size: 14px;
+            letter-spacing: 5.25px;
+            display: block;
+            opacity: .7;
+            text-align: right;
+            font-weight: 400;
+        }
+    }
+}
+
+.quantity {
+    @extend .b-text;
+
+    span {
+        font-size: 14px;
+        letter-spacing: 5.25px;
+        display: block;
+        opacity: .7;
+        text-align: right;
+        font-weight: 400;
+    }
+
+}

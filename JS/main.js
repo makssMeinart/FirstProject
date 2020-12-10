@@ -16,8 +16,8 @@ $(function () {
    $('.cards').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
-      prevArrow: `<img class="card__slider-arrow left" src="../Images/cardSlideArrowLeft.png"></img>`,
-      nextArrow: `<img class="card__slider-arrow right" src="../Images/cardSlideArrowRight.png"></img>`,
+      prevArrow: `<img class="slider-arrows slider-arrows__left" src="../Images/Header-Arrow-Left.svg" alt=""></img>`,
+      nextArrow: `<img class="slider-arrows slider-arrows__right" src="../Images/Header-Arrow-Right.svg" alt=""></img>`,
       asNavFor: '.slider-map'
    });
 
@@ -28,10 +28,25 @@ $(function () {
       focusOnSelect: true,
       asNavFor: '.cards'
    })
+   
+   $('.slider-travel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: `<img class="slider-arrows slider-arrows__left" src="../Images/Header-Arrow-Left.svg" alt=""></img>`,
+      nextArrow: `<img class="slider-arrows slider-arrows__right" src="../Images/Header-Arrow-Right.svg" alt=""></img>`,
+   });
+
+   $('.sleep-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:true,
+      prevArrow: `<img class="slider-arrows slider-arrows__left" src="../Images/Header-Arrow-Left.svg" alt=""></img>`,
+      nextArrow: `<img class="slider-arrows slider-arrows__right" src="../Images/Header-Arrow-Right.svg" alt=""></img>`,
+   });
 
 })
 
 
 
-
-
+// Add Value To Booking

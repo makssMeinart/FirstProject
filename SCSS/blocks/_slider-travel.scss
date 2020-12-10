@@ -1,0 +1,84 @@
+.slider-travel {
+    .slider-arrows {
+        height: 300px;
+    }
+}
+
+ .travel-slide {
+    outline: none;
+    position: relative;
+ 
+    &__img {
+        display: block;
+        min-height: 780px;
+        max-width: 1200px;
+        width: 100%;
+        background-image: url("/Images/travel-image.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__head {
+        display: flex;
+        position: relative;
+        margin-bottom: 7.5rem;
+        
+        // Plane
+        &::before {
+            content: "";
+            position: absolute;
+            height: 250px;
+            width: 750px;
+            background-image: url("/Images/virgin-plane.png");
+            background-position: center;
+            background-size: cover;
+            bottom: 0;
+            right: 0;
+    
+        }
+    }
+
+    .subtitle-right {
+        right: 0;
+        margin-top: 70px;
+        position: absolute;
+    }
+
+    .subtitle-left {
+        bottom: 0;
+        position: absolute;
+        padding-right: 78px;
+
+        &::before {
+            content: "";
+            width: 52px;
+            height: 46px;
+            position: absolute;
+            background-image: url("/Images/virgin-logo.png");
+            right: 0;
+            top: 50%;
+        }
+    }
+
+}
+
+.travel {
+
+    .primary-btn {
+        margin-bottom: 290px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: 0;
+            height: 564px;
+            width: 564px;
+            background-image: url("/Images/cocktail-img.png");
+            transform: translateX(235px);
+        }
+        
+
+    }
+}
