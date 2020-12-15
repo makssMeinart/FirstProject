@@ -850,6 +850,10 @@
   font-weight: 400;
 }
 
+#total__pay {
+  display: inline-block;
+}
+
 .sleep-slider .slider-arrows {
   height: 300px;
 }

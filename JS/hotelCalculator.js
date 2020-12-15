@@ -32,3 +32,10 @@ $('.quantity').each(function() {
   });
 
 });
+
+// Variables
+ 
+
+
+// Function 
+
